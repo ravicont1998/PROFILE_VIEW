@@ -651,6 +651,27 @@ img {
   color: var(--first-color);
 }
 
+.qualification__points {
+    list-style-type: none;
+    padding-left: 20px; /* Adjust indentation as needed */
+    margin-top: 0; /* Remove default margin */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.qualification__points li {
+    margin-bottom: 5px; /* Adjust spacing between points as needed */
+    color: #333; /* Adjust color as needed */
+}
+
+.qualification__points li::before {
+    content: "\2022"; /* Unicode character for bullet */
+    color: #333; /* Adjust color as needed */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; /* Adjust alignment */
+}
+
+
 /*==================== SERVICES ====================*/
 .services__container {
   gap: 1.5rem;
@@ -1319,6 +1340,9 @@ img {
   }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
+  }
+  .gold {
+    color: gold; /* Or any other shade of gold you prefer */
   }
 
   .contact__form {
