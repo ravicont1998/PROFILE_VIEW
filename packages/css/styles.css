@@ -308,7 +308,7 @@ img {
 }
 
 .home__blob-img {
-  width: 220px;
+  width: 200px;
 }
 
 .home__data {
@@ -652,7 +652,7 @@ img {
 }
 
 .qualification__points {
-    list-style-type: none;
+    list-style-type: disc;
     padding-left: 20px; /* Adjust indentation as needed */
     margin-top: 0; /* Remove default margin */
     margin-bottom: 10px; /* Adjust spacing as needed */
@@ -952,8 +952,15 @@ img {
   padding-top: 2rem;
 }
 
-.footer__container {
+/*.footer__container {
   row-gap: 3.5rem;
+}
+*/
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .footer__bg {
@@ -992,7 +999,7 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: white;
   margin-top: var(--mb-3);
 }
 
